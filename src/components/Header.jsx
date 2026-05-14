@@ -7,12 +7,12 @@ import { FiShoppingBag } from "react-icons/fi";
 function Header() {
 
   return (
-    <section className="w-full flex justify-between items-center p-4 bg-transparent absolute text-white">
+    <section className="w-full flex justify-between items-center p-4 bg-transparent absolute text-white z-10 font-jetbrains">
       <div className="w-[20%]">
-            <img src={logoParadox} alt=""  className='w-35'/>
+            <img src={logoParadox} alt=""  className='w-35 cursor-pointer'/>
       </div>
 
-      <div className='flex gap-4 w-[60%] justify-center text-lg'>
+      <div className='flex gap-4 w-[60%] justify-center text-lg '>
         <a href="">Loja</a>
         <a href="">Coleções</a>
         <a href="">Lançamentos</a>
@@ -20,10 +20,10 @@ function Header() {
       </div>
 
       <div className='flex gap-4 w-[10%] justify-around text-xl'>
-        <IoSearch />
-        <FaRegHeart />
-        <MdOutlinePerson />
-        <FiShoppingBag />
+        <IoSearch className='cursor-pointer'/>
+        <FaRegHeart className='cursor-pointer'/>
+        <MdOutlinePerson className='cursor-pointer'/>
+        <FiShoppingBag className='cursor-pointer'/>
       </div>
     </section>
   )
